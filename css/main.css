@@ -107,7 +107,7 @@ nav a {
 
 .cover {
     height: 50vh;
-    background-image:url("../img/brandeisLogo.png"),url("../img/cover.jpg");
+    background-image:url("../img/logo.png"),url("../img/cover.jpg");
     background-attachment: scroll, fixed;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
