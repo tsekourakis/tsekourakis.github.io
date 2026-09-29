@@ -248,8 +248,10 @@ ul {
 }
 
 .news-image {
+    display: block;
     flex: 0 0 220px;
     width: 220px;
+    height: auto;
     align-self: center;
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -406,6 +408,19 @@ footer a:hover span {
         padding-top: 60px;
     }
 
+    /* Put the news image on its own row below the text */
+    .news-list li {
+        flex-wrap: wrap;
+    }
+
+    .news-image {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 520px;
+        margin-top: 4px;
+        align-self: flex-start;
+    }
+
 
 }
 
@@ -452,16 +467,15 @@ footer a:hover span {
         gap: 2px;
     }
 
-    .news-date {
-        flex-basis: auto;
+    .news-date, .news-text {
+        flex: none;
     }
 
     .news-image {
-        flex-basis: auto;
+        flex: none;
         width: 100%;
-        max-width: 360px;
+        max-width: none;
         margin-top: 10px;
-        align-self: flex-start;
     }
 
     .advising {
