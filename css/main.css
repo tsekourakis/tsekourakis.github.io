@@ -243,7 +243,16 @@ ul {
 }
 
 .news-text {
+    flex: 1;
     color: var(--text);
+}
+
+.news-image {
+    flex: 0 0 220px;
+    width: 220px;
+    align-self: center;
+    border: 1px solid var(--border);
+    border-radius: 4px;
 }
 
 /* Publications */
@@ -445,6 +454,14 @@ footer a:hover span {
 
     .news-date {
         flex-basis: auto;
+    }
+
+    .news-image {
+        flex-basis: auto;
+        width: 100%;
+        max-width: 360px;
+        margin-top: 10px;
+        align-self: flex-start;
     }
 
     .advising {
